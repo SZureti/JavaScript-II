@@ -58,7 +58,7 @@ const runners = [{"id":1,"first_name":"Charmain","last_name":"Seiler","email":"c
 let fullName = [];
 
 runners.forEach(function (firstName){
-    fullName.push(firstName.first_name + firstName.last_name)
+    fullName.push(`${firstName.first_name}  ${firstName.last_name}`)
 })
 
 console.log(fullName);
@@ -97,13 +97,13 @@ console.log(ticketPriceTotal);
 // Problem 1
 // Create a list of the runners with their last names in allCaps.
 
-let caps = [];
+let allCaps = [];
 
 const lastNames = runners.map(function(runner){
     return runner.last_name.toUpperCase();
 })
 
-
+console.log(allCaps);
 // Problem 2
 // Create a list of the runners size medium shirts.
 
