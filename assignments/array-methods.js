@@ -72,6 +72,7 @@ const firstNames = runners.map(function(runner){
 })
 
 console.log(allCaps);
+
 // ==== Challenge 3: Use .filter() ====
 // The large shirts won't be available for the event due to an ordering issue.  Get a list of runners with large sized shirts so they can choose a different size. Return an array named largeShirts that contains information about the runners that have a shirt size of L and log the result
 let largeShirts = [];
@@ -97,13 +98,23 @@ console.log(ticketPriceTotal);
 // Problem 1
 // Create a list of the runners with their last names in allCaps.
 
-let allCaps = [];
+let allUpperCaps = [];
 
 const lastNames = runners.map(function(runner){
     return runner.last_name.toUpperCase();
 })
+console.log([lastNames]);
 
-console.log(allCaps);
+//List the last element in the runner array.
+
+let lastArray = [];
+
+function getLast(){
+    return runner[runner.length - 1];
+}
+
+
+
 // Problem 2
 // Create a list of the runners size medium shirts.
 
